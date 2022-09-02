@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(236, 235, 235);
+
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
+}
+
+section .head {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 4px;
+  padding-right: 12px;
+}
+
+#group-chat {
+  text-align: center;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+#group-chat h1 {
+  font-weight: bolder;
+}
+
+#button {
+  margin-top: 2rem;
+}
+
+#button .button1 {
+  padding: 12px;
+
+  border: none;
+  border-radius: 16px;
+  background-color: rgb(4, 97, 92);
+  color: white;
+}
+
+#button .button2 {
+  padding: 12px;
+  margin-left: 4px;
+  border: none;
+  border-radius: 16px;
+  background-color: rgb(57, 21, 71);
+  color: white;
+}
+
+#pictures {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 0 5rem;
+}
+
+#pictures img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#modern {
+  text-align: center;
+  margin-top: 12px;
+}
+
+#modern h3 {
+  margin-top: 48px;
+  font-size: 18px;
+  letter-spacing: 8px;
+  font-weight: bolder;
+  color: rgb(4, 97, 92);
+}
+
+#modern h4 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+#modern p {
+  color: gray;
+}
+
+footer {
+  height: 20vh;
+  display: flex;
+  margin-top: 24px;
+  padding: 60px 0 0 24px;
+  background-image: linear-gradient(rgba(4, 97, 92, 0.7), rgba(4, 97, 92, 0.7)),
+    url(./assets/desktop/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  justify-content: space-between;
+}
+
+footer button {
+  height: 48px;
+  margin: 12px 120px 0 0;
+  padding: 12px 28px;
+  border-radius: 16px;
+  border: none;
+  background-color: rgb(57, 21, 71);
+  color: white;
+}
+
+/* media query section */
+@media (max-width: 576px) {
+  nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    text-align: center;
+  }
+
+  section .head {
+    display: block;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 4px;
+    padding-right: 4px;
+    justify-content: space-between;
+  }
+
+  #left-hero {
+    display: none;
+  }
+
+  #right-hero {
+    display: none;
+  }
+
+  #group-chat h1 {
+    font-size: 3rem;
+  }
+
+  #pictures {
+    display: block;
+    gap: 4px;
+    margin-top: 12px;
+    padding-left: 4px;
+    padding-right: 12px;
+    justify-content: space-between;
+  }
+
+  footer {
+    /* height: 20vh; */
+
+    margin-top: 24px;
+    padding-bottom: 2rem;
+    background-image: linear-gradient(
+        rgba(4, 97, 92, 0.7),
+        rgba(4, 97, 92, 0.7)
+      ),
+      url(./assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+
+  footer {
+    display: block;
+    margin: auto;
+    text-align: center;
+    border: 1px solid red;
+  }
+  footer p {
+    font-size: 12px;
+    /* margin-top: 48px; */
+    padding: 0 14px 10px;
+  }
+
+  footer button {
+    /* margin-top: 40px;
+    margin-right: 24px; */
+    border-radius: 16px;
+    border-style: none;
+    background-color: rgb(57, 21, 71);
+    color: white;
+    display: block;
+    margin: auto;
+  }
+}
